@@ -1,0 +1,39 @@
+object[,] datas = new object[4, 3];
+
+            datas[0, 0] = "Jack Black";
+            datas[0, 1] = 5400;
+            datas[0, 2] = true;
+
+            datas[1, 0] = "Demi Moore";
+            datas[1, 1] = 6500;
+            datas[1, 2] = false;
+
+            datas[2, 0]="Jason Statham";
+            datas[2, 1]=8780;
+            datas[2, 2] = true;
+
+            datas[3, 0]="Liv Taylor";
+            datas[3, 1]=1000;
+            datas[3, 2] = false;
+
+            
+            for (int line = 0; line < 4; line++)
+            {
+                for (int column = 0; column < 3; column++)
+                {
+                    
+
+                    
+                    if (Convert.ToBoolean(datas[line, 2]) == true)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
+                    Console.Write(datas[line, column] + "\t");
+
+                } Console.WriteLine();
+            }
+                Console.ReadKey();
